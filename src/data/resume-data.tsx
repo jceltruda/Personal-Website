@@ -1,236 +1,201 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Joseph Celtruda",
+  initials: "JC",
+  location: "Troy, NY, USA",
+  locationLink: "https://www.google.com/maps/place/Troy,+NY",
+  about:
+    "M.S. Computer Science @ RPI",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      I am a Computer Science student at Rensselaer Polytechnic Institute, 
+      researching sequential recommender systems and AI optimization. I am 
+      interested in software engineering and applied AI, with internship 
+      experience in ML engineering, full-stack development, and scalable 
+      backend systems.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/126628676?v=4",
+  resumeUrl: "/resume.pdf",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "jaceltruda@gmail.com",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/jceltruda",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://linkedin.com/in/joseph-celtruda/",
         icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Rensselaer Polytechnic Institute",
+      degree: "M.S. Computer Science",
+      start: "2025",
+      end: "(Dec 2026)",
+    },
+    {
+      school: "Rensselaer Polytechnic Institute",
+      degree:
+        "B.S. Computer Science",
+      start: "2022",
+      end: "2025",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
-      start: "2025",
-      end: null,
+      company: "TE Connectivity",
+      link: "https://www.te.com/",
+      badges: ["Wintson-Salem, NC"],
+      title: "Software Engineer Intern",
+      start: "May 2025",
+      end: "Aug 2025",
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
-        </>
-      ),
-    },
-    {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Trained PyTorch regression models for anomaly detection and
+              predictive maintenance on manufacturing sensor data.
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              Designed scalable JavaScript microservices and APIs using
+              MQTT/HTTP and Postgres for data monitoring and alerting.
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              Developed a full-stack web dashboard (Node.js, Bootstrap) for
+              real-time alert monitoring, resolution, and management.
+            </li>
+            <li>
+              Built a mobile Flutter Android app with real-time alerts and
+              push-to-talk using Socket.IO/WebRTC.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
+      company: "P1ston",
+      link: "https://p1ston.com/",
+      badges: ["Remote"],
+      title: "AI Engineer Intern (Part-Time)",
+      start: "May 2025",
+      end: "Aug 2025",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+              Fine-tuned open-source LLMs for supply chain document processing,
+              improving extraction performance and reliability.
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
+              Engineered extraction prompts using chain-of-thought and
+              multi-shot techniques, achieving 100% validation accuracy.
             </li>
             <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Researched and analyzed supply chain documents (POAs, ASNs) to 
+              identify critical fields for automated data extraction.
+            </li>
+            <li>
+              Designed JSON extraction schemas to standardize information 
+              capture across diverse document formats.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
+      company: "Hudson River Community Credit Union",
+      link: "https://www.hrccu.org/",
+      badges: ["Corinth, NY"],
+      title: "Management Information Systems Intern",
+      start: "May 2024",
+      end: "Aug 2024",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
           <ul className="list-inside list-disc">
             <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
+              Engineered automated pipelines to streamline data collection,
+              processing, and integration for a relational database.
             </li>
             <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
+              Developed Python scripts leveraging Pandas and REST APIs to
+              geocode and format over 100K data points for analysis.
             </li>
             <li>
-              Led development teams across multiple successful client projects
+              Created dynamic visualizations in Power BI to effectively 
+              present and analyze processed data.
+
             </li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "Python",
+    "Java",
+    "C++",
+    "C",
+    "JavaScript",
+    "HTML/CSS",
+    "R",
+    "SQL",
+    "REST APIs",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "Git",
+    "Linux",
+    "NodeJS",
+    "Bootstrap",
+    "Django",
+    "PyTorch",
+    "LangChain",
+    "Transformers",
+    "NumPy",
+    "Pandas",
+    "OpenCV",
+    "Matplotlib",
+    "Dart",
+    "Flutter",
+    "LaTex",
+    "Power BI"
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Rehab Games",
+      techStack: ["JavaScript", "Django", "MediaPipe", "Gunicorn"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "Turns rehab exercises into fun retro games",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "View Project",
+        href: "https://rehab-games.onrender.com/",
       },
     },
     {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
+      title: "Lung Cancer Detection Using CNN",
+      techStack: ["Python", "PyTorch"],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "CNN for lung cancer detection from CT scans",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "View Project",
+        href: "https://github.com/jceltruda/CNN-for-Lung-Cancer-Classification",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "FinGPT - Transformer Prediction",
+      techStack: ["Python", "PyTorch", "Transformers"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "Fine-tuning LLMs for stock market prediction",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "View Project",
+        href: "https://github.com/jceltruda/FinGPT-TransformerPrediction",
       },
     },
   ],
