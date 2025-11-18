@@ -41,7 +41,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: RESUME_DATA.personalWebsiteUrl,
     siteName: `${RESUME_DATA.name}'s CV`,
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
@@ -57,14 +56,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
-    description: RESUME_DATA.about,
-    creator: "@BartoszJarocki",
-  },
   alternates: {
-    canonical: RESUME_DATA.personalWebsiteUrl,
+    canonical: "/",
   },
 };
 

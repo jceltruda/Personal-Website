@@ -4,7 +4,6 @@ import React from "react";
 import { Avatar } from "@/components/avatar";
 import { Button } from "@/components/ui/button";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
-import { XIcon } from "@/components/icons/x-icon";
 import { RESUME_DATA } from "@/data/resume-data";
 import type { ResumeIcon, IconType } from "@/lib/types";
 
@@ -12,10 +11,8 @@ import type { ResumeIcon, IconType } from "@/lib/types";
 const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   github: GitHubIcon,
   linkedin: LinkedInIcon,
-  x: XIcon,
   globe: GlobeIcon,
   mail: MailIcon,
-  phone: PhoneIcon,
 } as const;
 
 interface LocationLinkProps {
@@ -102,15 +99,6 @@ function ContactButtons({
           />
         </li>
       )}
-      {contact.tel && (
-        <li>
-          <SocialButton
-            href={`tel:${contact.tel}`}
-            iconType="phone"
-            label="Phone"
-          />
-        </li>
-      )}
       {contact.social.map((social) => (
         <li key={social.name}>
           <SocialButton
@@ -157,14 +145,6 @@ function PrintContact({
           <span aria-hidden="true">/</span>
         </>
       )}
-      {contact.tel && (
-        <a
-          className="underline hover:text-foreground/70"
-          href={`tel:${contact.tel}`}
-        >
-          {contact.tel}
-        </a>
-      )}
     </div>
   );
 }
@@ -190,12 +170,10 @@ export function Header() {
 
         <ContactButtons
           contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
 
         <PrintContact
           contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
       </div>
 

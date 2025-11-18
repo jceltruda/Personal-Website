@@ -13,10 +13,10 @@ import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} - Resume`,
+  title: `${RESUME_DATA.name} - Portfolio`,
   description: RESUME_DATA.about,
   openGraph: {
-    title: `${RESUME_DATA.name} - Resume`,
+    title: `${RESUME_DATA.name} - Portfolio`,
     description: RESUME_DATA.about,
     type: "profile",
     locale: "en_US",
@@ -29,29 +29,13 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `${RESUME_DATA.name} - Resume`,
-    description: RESUME_DATA.about,
-    images: ["https://cv.jarocki.me/opengraph-image"],
-  },
 };
 
 /**
  * Transform social links for command menu
  */
 function getCommandMenuLinks() {
-  const links = [];
-
-  if (RESUME_DATA.personalWebsiteUrl) {
-    links.push({
-      url: RESUME_DATA.personalWebsiteUrl,
-      title: "Personal Website",
-    });
-  }
-
   return [
-    ...links,
     ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
       url: socialMediaLink.url,
       title: socialMediaLink.name,

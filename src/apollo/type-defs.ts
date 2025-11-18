@@ -14,9 +14,6 @@ export class Contact {
   @Field(() => String)
   email: string;
 
-  @Field(() => String)
-  tel: string;
-
   @Field(() => [Social])
   social: Social[];
 }
@@ -106,9 +103,6 @@ export class Me {
 
   @Field(() => String)
   avatarUrl: string;
-
-  @Field(() => String)
-  personalWebsiteUrl: string;
 
   @Field(() => Contact)
   contact: Contact;
