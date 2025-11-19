@@ -13,16 +13,16 @@ import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} - Portfolio`,
+  title: `${RESUME_DATA.name} - Home`,
   description: RESUME_DATA.about,
   openGraph: {
-    title: `${RESUME_DATA.name} - Portfolio`,
+    title: `${RESUME_DATA.name} - Home`,
     description: RESUME_DATA.about,
     type: "profile",
     locale: "en_US",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
+        url: "https://joeceltruda.dev/opengraph-image",
         width: 1200,
         height: 630,
         alt: `${RESUME_DATA.name}'s profile picture`,

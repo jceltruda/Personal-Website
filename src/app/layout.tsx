@@ -9,8 +9,8 @@ import { ErrorBoundary } from "@/components/error-boundary";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name - Personal Website",
-  description: "Personal website and portfolio",
+  title: "Joseph Celtruda - Resume",
+  description: "Personal website and resume",
 };
 
 export const viewport: Viewport = {
