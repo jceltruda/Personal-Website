@@ -20,6 +20,16 @@ export function Summary({ summary, className }: AboutProps) {
       <div className="text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
         {summary}
       </div>
+      <p className="text-pretty font-mono text-sm text-foreground/80 mt-4">
+        <a 
+          href="/resume" 
+          className="underline hover:text-foreground"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View my resume
+        </a>
+      </p>
     </Section>
   );
 }

@@ -12,7 +12,7 @@ export const RESUME_DATA: ResumeData = {
       I am a Computer Science student at Rensselaer Polytechnic Institute, 
       researching sequential recommender systems and AI optimization. I am 
       interested in software engineering and applied AI, with internship 
-      experience in ML engineering, full-stack development, and scalable 
+      experience in AI engineering, full-stack development, and scalable 
       backend systems.
     </>
   ),
@@ -58,24 +58,7 @@ export const RESUME_DATA: ResumeData = {
       end: "Aug 2025",
       description: (
         <>
-          <ul className="list-inside list-disc">
-            <li>
-              Trained PyTorch regression models for anomaly detection and
-              predictive maintenance on manufacturing sensor data.
-            </li>
-            <li>
-              Designed scalable JavaScript microservices and APIs using
-              MQTT/HTTP and Postgres for data monitoring and alerting.
-            </li>
-            <li>
-              Developed a full-stack web dashboard (Node.js, Bootstrap) for
-              real-time alert monitoring, resolution, and management.
-            </li>
-            <li>
-              Built a mobile Flutter Android app with real-time alerts and
-              push-to-talk using Socket.IO/WebRTC.
-            </li>
-          </ul>
+          Full stack engineering inside automotive business unit
         </>
       ),
     },
@@ -88,24 +71,7 @@ export const RESUME_DATA: ResumeData = {
       end: "Aug 2025",
       description: (
         <>
-          <ul className="list-inside list-disc">
-            <li>
-              Fine-tuned open-source LLMs for supply chain document processing,
-              improving extraction performance and reliability.
-            </li>
-            <li>
-              Engineered extraction prompts using chain-of-thought and
-              multi-shot techniques, achieving 100% validation accuracy.
-            </li>
-            <li>
-              Researched and analyzed supply chain documents (POAs, ASNs) to 
-              identify critical fields for automated data extraction.
-            </li>
-            <li>
-              Designed JSON extraction schemas to standardize information 
-              capture across diverse document formats.
-            </li>
-          </ul>
+          Prompt and AI engineering for supply chain document processing
         </>
       ),
     },
@@ -118,21 +84,7 @@ export const RESUME_DATA: ResumeData = {
       end: "Aug 2024",
       description: (
         <>
-          <ul className="list-inside list-disc">
-            <li>
-              Engineered automated pipelines to streamline data collection,
-              processing, and integration for a relational database.
-            </li>
-            <li>
-              Developed Python scripts leveraging Pandas and REST APIs to
-              geocode and format over 100K data points for analysis.
-            </li>
-            <li>
-              Created dynamic visualizations in Power BI to effectively 
-              present and analyze processed data.
-
-            </li>
-          </ul>
+          Data pipeline automation and geospatial data processing
         </>
       ),
     },
