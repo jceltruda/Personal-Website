@@ -53,7 +53,10 @@ function EducationItem({ education }: EducationItemProps) {
           .toLowerCase()
           .replace(/\s+/g, "-")}`}
       >
-        {degree}
+        <div className="text-sm text-muted-foreground">{degree}</div>
+        {education.gpa && (
+          <div className="text-sm text-muted-foreground">{education.gpa}</div>
+        )}
       </CardContent>
     </Card>
   );

@@ -24,6 +24,7 @@ export interface ResumeData {
   education: Array<{
     school: string;
     degree: string;
+    gpa?: string;
     start: string;
     end: string;
   }>;
