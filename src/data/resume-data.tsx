@@ -54,6 +54,7 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.te.com/",
       badges: ["Wintson-Salem, NC"],
       title: "Software Engineer Intern",
+      logo: "/logos/te-connectivity.jpg",
       start: "May 2025",
       end: "Aug 2025",
       description: (
@@ -67,6 +68,7 @@ export const RESUME_DATA: ResumeData = {
       link: "https://p1ston.com/",
       badges: ["Remote"],
       title: "AI Engineer Intern (Part-Time)",
+      logo: "/logos/p1ston.jpg",
       start: "May 2025",
       end: "Aug 2025",
       description: (
@@ -80,6 +82,7 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.hrccu.org/",
       badges: ["Corinth, NY"],
       title: "Management Information Systems Intern",
+      logo: "/logos/hrccu.jpg",
       start: "May 2024",
       end: "Aug 2024",
       description: (

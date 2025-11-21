@@ -13,14 +13,7 @@ interface BadgeListProps {
   badges: WorkBadges;
 }
 
-/**
- * Renders a list of badges for work experience
- * Handles both mobile and desktop layouts through className prop
- */
-function BadgeList({
-  className,
-  badges,
-}: BadgeListProps) {
+function BadgeList({ className, badges }: BadgeListProps) {
   if (badges.length === 0) return null;
 
   return (
@@ -47,13 +40,7 @@ interface WorkPeriodProps {
   end?: WorkExperience["end"];
 }
 
-/**
- * Displays the work period in a consistent format
- */
-function WorkPeriod({
-  start,
-  end,
-}: WorkPeriodProps) {
+function WorkPeriod({ start, end }: WorkPeriodProps) {
   return (
     <div
       className="text-sm tabular-nums text-gray-500"
@@ -69,13 +56,7 @@ interface CompanyLinkProps {
   link: WorkExperience["link"];
 }
 
-/**
- * Renders company name with optional link
- */
-function CompanyLink({
-  company,
-  link,
-}: CompanyLinkProps) {
+function CompanyLink({ company, link }: CompanyLinkProps) {
   return (
     <a
       className="hover:underline"
@@ -93,38 +74,53 @@ interface WorkExperienceItemProps {
   work: WorkExperience;
 }
 
-/**
- * Individual work experience card component
- * Handles responsive layout for badges (mobile/desktop)
- */
-function WorkExperienceItem({
-  work,
-}: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description } = work;
+function WorkExperienceItem({ work }: WorkExperienceItemProps) {
+  const { company, link, badges, title, start, end, description, logo } = work;
 
   return (
     <Card className="py-1 print:py-0">
       <CardHeader className="print:space-y-1">
-        <div className="flex items-center justify-between gap-x-2 text-base">
-          <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
-            <CompanyLink company={company} link={link} />
-            <BadgeList
-              className="hidden gap-x-1 sm:inline-flex"
-              badges={badges}
+        {/* NEW: Image + text wrapper */}
+        <div className="flex gap-4">
+          {/* New left-side logo */}
+          {logo && (
+            <img
+              src={logo}
+              alt={`${company} logo`}
+              className="h-12 w-12 rounded-md object-contain"
             />
-          </h3>
-          <WorkPeriod start={start} end={end} />
-        </div>
+          )}
 
-        <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">
-          {title}
-        </h4>
+          {/* Right side content aligned together */}
+          <div className="flex flex-col flex-1 gap-2">
+            <div className="flex items-center justify-between gap-x-2 text-base">
+              <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
+                <CompanyLink company={company} link={link} />
+                <BadgeList
+                  className="hidden gap-x-1 sm:inline-flex"
+                  badges={badges}
+                />
+              </h3>
+              <WorkPeriod start={start} end={end} />
+            </div>
+
+            <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">
+              {title}
+            </h4>
+          </div>
+        </div>
       </CardHeader>
 
       <CardContent>
-        <div className="mt-2 text-xs text-foreground/80 print:mt-1 print:text-[10px] text-pretty">
+        <div
+          className={cn(
+            "mt-2 text-xs text-foreground/80 print:mt-1 print:text-[10px] text-pretty",
+            logo && "ml-16" // keep indent consistent under the header logo
+          )}
+        >
           {description}
         </div>
+
         <div className="mt-2">
           <BadgeList
             className="-mx-2 flex-wrap gap-1 sm:hidden"
@@ -140,13 +136,7 @@ interface WorkExperienceProps {
   work: (typeof RESUME_DATA)["work"];
 }
 
-/**
- * Main work experience section component
- * Renders a list of work experiences in chronological order
- */
-export function WorkExperience({
-  work,
-}: WorkExperienceProps) {
+export function WorkExperience({ work }: WorkExperienceProps) {
   return (
     <Section>
       <h2 className="text-xl font-bold" id="work-experience">

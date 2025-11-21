@@ -33,6 +33,7 @@ export interface ResumeData {
     link: string;
     badges: string[];
     title: string;
+    logo?: string;
     start: string;
     end: string | null;
     description: string | React.ReactNode;
