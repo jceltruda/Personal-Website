@@ -50,6 +50,20 @@ export const RESUME_DATA: ResumeData = {
   ],
   work: [
     {
+      company: "Jahnel Group",
+      link: "https://www.jahnelgroup.com/",
+      badges: ["Schenectady, NY"],
+      title: "Software Engineer Intern",
+      logo: "/logos/jahnel.jpg",
+      start: "June 2026",
+      end: "Present",
+      description: (
+        <>
+          Full stack engineering.
+        </>
+      ),
+    },
+    {
       company: "TE Connectivity",
       link: "https://www.te.com/",
       badges: ["Wintson-Salem, NC"],
