@@ -9,10 +9,10 @@ export const RESUME_DATA: ResumeData = {
     "M.S. Computer Science @ RPI",
   summary: (
     <>
-      I am a Computer Science student at Rensselaer Polytechnic Institute, 
-      researching sequential recommender systems and AI optimization. I am 
-      interested in software engineering and applied AI, with internship 
-      experience in AI engineering, full-stack development, and scalable 
+      I am a Computer Science student at Rensselaer Polytechnic Institute,
+      researching sequential recommender systems and AI optimization. I am
+      interested in software engineering and applied AI, with internship
+      experience in AI engineering, full-stack development, and scalable
       backend systems.
     </>
   ),
@@ -38,6 +38,7 @@ export const RESUME_DATA: ResumeData = {
       school: "Rensselaer Polytechnic Institute",
       degree: "M.S. Computer Science",
       gpa: "GPA: 4.0 / 4.0",
+      logo: "/logos/rpi.jpg",
       start: "2026",
       end: "(Dec 2026)",
     },
@@ -45,6 +46,7 @@ export const RESUME_DATA: ResumeData = {
       school: "Rensselaer Polytechnic Institute",
       degree: "B.S. Computer Science",
       gpa: "GPA: 3.62 / 4.0",
+      logo: "/logos/rpi.jpg",
       start: "2022",
       end: "2025",
     },
@@ -60,7 +62,7 @@ export const RESUME_DATA: ResumeData = {
       end: "Present",
       description: (
         <>
-          Full stack engineering.
+          Full stack engineering
         </>
       ),
     },

@@ -25,6 +25,7 @@ export interface ResumeData {
     school: string;
     degree: string;
     gpa?: string;
+    logo?: string;
     start: string;
     end: string;
   }>;
