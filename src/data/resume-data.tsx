@@ -37,6 +37,7 @@ export const RESUME_DATA: ResumeData = {
     {
       school: "Rensselaer Polytechnic Institute",
       degree: "M.S. Computer Science",
+      gpa: "GPA: 4.0 / 4.0",
       start: "2026",
       end: "(Dec 2026)",
     },
